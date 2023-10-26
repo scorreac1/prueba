@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Verifica si es compatible con un navegador especifico -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        body {
+            min-height: 150vh;  
+        }
+    </style>
+</head>
+<body>
+    <!-- ambas son formas validas de volver a index.html ya que este es el archivo ppal. -->
+    <a href="./">Volver</a>
+    <br>
+    <a href="./index.html">Volver</a>
+
+    <center>
+        <h1>Multimedia</h1>
+    </center>
+
+    <hr/>
+
+    <h2>Importar Imágenes Locales</h2>
+
+    <!-- alt es el mensaje alternativo si no carga la imagen correctamente -->
+    <img 
+        src="./img/img1.avif" 
+        alt="Imagen de Perrito" 
+        height="300px"
+    />
+
+    <hr/>
+
+    <h2>Importar Imágenes Externas</h2>
+
+    <!-- Asi se importan desde internet. Es buena practica usar lazy loading -->
+    <img 
+        src="https://img.freepik.com/vector-premium/buggy-aventura-utv-atv-logo-vector_498574-647.jpg?w=1380" 
+        alt="Imagen de UTV" 
+        height="300px"
+        loading="lazy"
+    />
+
+    <hr/>
+
+    <h2>Etiqueta Figure Avec Leyend</h2>
+
+    <figure>
+        <img 
+        src="./img/img2.avif" 
+        alt="Imagen de Perritos" 
+        height="300px"
+        loading="lazy"
+        />
+        <figcaption>Good Bois</figcaption>
+    </figure>
+
+    <hr/>
+
+    <h2>Importar Gifs</h2>
+
+    <img 
+        src="./img/giphy.gif" 
+        alt="Panda Gif" 
+        height="300px"
+        loading="lazy"
+    />
+
+    <hr/>
+
+    <center>
+        <h2>Videos</h2>
+    </center>
+
+    <h2>Importar Video</h2>
+    <!-- El controls se puede poner sin controls='True' -->
+    <!-- poster es la previsualizacion del video -->
+    <video 
+        src="img/video.mp4"
+        controls = 'True'
+        poster="img/img2.avif"
+        alt="Video"
+        height="200px">
+    </video>
+
+    <hr/>
+
+    <h2>Video Autoreproducido</h2>
+    <video 
+        src="img/video.mp4"
+        autoplay = "True"
+        controls = "True"
+        poster="img/img2.avif"
+        alt="Video"
+        height="200px">
+    </video>
+
+    <hr/>
+    
+    <h2>Video Sin Sonido</h2>
+    <video 
+        src="img/video.mp4"
+        autoplay = "True"
+        controls = "True"
+        poster="img/img2.avif"
+        muted="True"
+        alt="Video"
+        height="200px">
+    </video>
+
+    <hr/>
+
+    <h2>Video Con Subtitulos</h2>
+    <video 
+        src="img/video.mp4"
+        controls = "True"
+        poster="img/img2.avif"
+        alt="Video"
+        height="200px">
+        <track 
+            src="subtitulos.vtt"
+            kind="subtitles"
+            srclang="es"
+            label="Español"
+        />
+        <track 
+            src="subtitulosingles.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+        />
+    </video>
+
+    <hr/>
+
+    <h2>Importar Video de YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7_8S91xvsHU?si=4rV3N-HMDLGjYiPr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- Importar un audio  -->
+    <hr/>
+
+    <h2>Importar un Audio</h2>
+    <audio
+        src="./img/audio.mp3"
+        controls="True">
+    </audio>
+
+    <h2>Audio Autoreproductor</h2>
+    <audio
+        src="./img/audio.mp3"
+        controls="True"
+        autoplay="True"
+        muted="True"
+        loop>
+    </audio>
+
+
+</body>
+</html>

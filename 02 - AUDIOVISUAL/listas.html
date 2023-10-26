@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        /* Esto permite que el scroll sea un barrido mas suave */
+        * {
+            scroll-behavior: smooth;
+        }
+        /* Esto sirve para configurar la altura del scroll en porcentaje */
+        body {
+            min-height: 150vh;  
+        }
+    </style>
+</head>
+<body>
+    <a href="./">Volver</a>
+    <br>
+
+    <!-- con el # se referencia la etiqueta que se llama asi -->
+    <a href="#lista_anidada_ordenada"> Ir a listas anidadas ordenadas</a>
+
+    <center>
+        <h1>Listas</h1>
+    </center>
+    <hr />
+
+    <h2 d="lista_ordenada">Listas Ordenadas en HTML5</h2>
+
+    <ol>
+        <!-- li*4 te permite hacer los 4 li al tiempo-->
+        <!-- li{item}*4 te permite hacer los 4 li al tiempo con contenido-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <hr />
+
+    <h2 d="lista_no_ordenada">Listas No Ordenadas en HTML5</h2>
+
+    <ul>
+        <!-- li{Item $}*5 -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <hr />
+
+    <h2 d="lista_anidada_no_ordenada">Listas Anidadas No Ordenadas</h2>
+
+    <ul>
+        <li> Esta es una lista de listas.
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <hr />
+
+    <h2 id="lista_anidada_ordenada">Listas Anidadas Ordenadas</h2>
+
+    <ol>
+        <li> Item 1
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h2>Lista de Descripciones</h2>
+
+    <dl>
+        <dt>Término 1</dt>
+        <dd>Descripción Término 1</dd>
+
+        <dt>Término 2</dt>
+        <dd>Descripción Término 2</dd>
+    </dl>
+
+
+</body>
+</html>

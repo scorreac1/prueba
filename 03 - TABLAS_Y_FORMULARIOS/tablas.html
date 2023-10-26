@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <!-- En CSS es obligatorio el ; al final del atributo  -->
+    <!-- Border collapse sirve para que solamente quede un borde (vienen dobles) -->
+    <style>
+        table, 
+        th, 
+        td {
+            border: 2px solid #000;
+            border-collapse: collapse;
+            padding: 5px;
+            /* text-align: center; text-align: end; text-align: inherit; ...*/
+        }
+        img {
+            border-radius: 50%;
+            width: 200px;
+            height: 140px;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="./">Volver</a>
+    <center>
+        <h1>Tablas en HTML5</h1>
+    </center>
+
+    <h2>Estructura Básica de una Tabla</h2>
+
+    <table>
+        <tr>
+            <td>product 1</td>
+            <td>product 2</td>
+            <td>product 3</td>
+            <td>product 4</td>
+        </tr>
+
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <h2>Estructura de una Tabla Completa</h2>
+
+    <table>
+        <!-- cabecera de la tabla -->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+                <th>Género</th>
+            </tr>
+        </thead>
+
+        <!-- cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td>Santiago</td>
+                <td>24</td>
+                <td>Medellín</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>19</td>
+                <td>Medellín</td>
+                <td>Femenino</td>
+            </tr>
+        </tbody>
+
+        <!-- Final o pie de la tabla  -->
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="3">2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr/>
+    <h2>Tabla Personalizada</h2>
+
+    <table>
+        <!-- cabecera de la tabla  -->
+        <thead>
+            <!-- table row 1 -->
+            <tr>
+                <th>Especie</th>
+                <th>#</th>
+                <th>Imagen</th>
+                <th>Nombre Mascota</th>
+                <th>Video</th>
+            </tr>
+        </thead>
+
+        <!-- cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td rowspan="3">Canis Lupus Familiaris</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <img src="./img/img5.avif" alt="Imagen de Mascota">
+                </td>
+                <td>Doggo</td>
+                <td>
+                    <video src="./img/video.mp4" alt="Video de Perro" width="200px" controls></video>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <img src="./img/img6.avif" alt="Imagen de Mascota">
+                </td>
+                <td colspan="2">Eva</td>
+            </tr>
+        </tbody>
+
+        <!-- Final o pie de la pagina -->
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+</body>
+</html>
