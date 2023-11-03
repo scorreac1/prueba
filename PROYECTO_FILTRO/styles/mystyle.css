@@ -1,0 +1,105 @@
+/* Acceder a google fonts, seleccionar el que guste y darle a import.
+Solamente copiar el @import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* El nombre de una clase debe ser exacto con mayusculas y minusculas */
+.titulo {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(200, 100, 0);
+    /* text-shadow: sombra_eje_y sombra_eje_x difuminacion_ppx color */
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-transform: initial;
+}
+
+.container_cards {
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* margen en orden y x */
+    /* margin = Lo que hay de afuera hasta el border */
+    margin: 0px 50px;
+    text-align: center;
+    /* padding = Dentro del border hacia el contenido  */
+    padding: 10px;
+    display: inline-flex;
+}
+
+.container_cards .tarjeta {
+    box-shadow: 1px 1px 10px rgb(30, 30, 30);
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    background: #e3e3e3;
+    /* background: rgb(100, 100, 100); */
+}
+
+.container_cards .tarjeta .titulo_tarjeta {
+    color: rgb(30, 5, 255)
+}
+
+.container_cards .tarjeta .d_block span {
+    display: block
+}
+
+.container_cards .tarjeta:nth-child(1) {
+    margin-right: 50px;
+}
+
+.contenedor_cajas {
+    /* Habilita flexbox a los hijos de este contenedor */
+    display: flex;
+    /* automaticamente el width es 100%.
+    Toma todo el ancho posible independiente de la pantalla.*/
+    width: 100%;
+    /* Justify space between permite justificar los elementos
+    dejando la misma separacion entre todos los elementos */
+    justify-content: space-between;
+    /* Justify space around permite justificar los elementos como
+    el anterior, pero agrega separacion en los extremos del contenedor.
+    Hay una distancia diferente entre los extremos y los elementos*/
+    justify-content: space-around;
+    /* Justify space evenly justifica los elementos con una misma
+    separacion entre ellos y en las esquinas. */
+    justify-content: space-evenly;
+    /*  */
+    /* Justify center centra el contenido horizontalmente */
+    justify-content: center;
+    /* Gap solo se puede usar si estamos en display flex y sirve
+    para dar un espacio entre los elementos */
+    /* Gap siempre va en el contenedor padre */
+    /* gap:200px; */
+    /*  */
+    /* ESTO SIRVE PARA HACER SITIOS WEB RESPONSIVOS */
+    flex-wrap: wrap;
+    /* flex direction cambia la direccion */
+    /* row reverse invierte en horizontal */
+    flex-direction: row-reverse;
+    /* Cambia la direccion colocando a todos los elementos como columna */
+    flex-direction: column;
+    flex-direction: column-reverse;
+
+}
+
+.contenedor_cajas .caja{
+    background-color: rgb(255,0,0);
+    width: 100px;
+    height: 100px;
+    /* margin siempre va en el contenedor hijo; */
+    margin: 10px;
+    border: 5px solid rgb(0,0,0);
+    /* Color blanco a las letras */
+    color: rgb(255,255,255);
+    font-size: 24px;
+    /* letra en negrita */
+    font-weight: bolder;
+    /* Uso flexbox para centrar el contenido horizontalmente y verticalmente*/
+    display: flex;
+    /* centra horizontalmente */
+    justify-content: center;
+    /* centra verticalmente */
+    /* Para que funcione, el padre debe tener un alto definido */
+    align-items: center;
+    
+}
